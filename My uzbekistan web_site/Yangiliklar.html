@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yangiliklar — O'ZBEKISTON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="index.html">O'ZBEKISTON</a></div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menyu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="Yangiliklar.html" class="nav-link">Yangiliklar</a></li>
+          <li><a href="Hududlar.html" class="nav-link">Hududlar</a></li>
+          <li><a href="Madaniyat.html" class="nav-link">Madaniyat</a></li>
+          <li><a href="Aloqa.html" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+     <section id="news" class="section">
+    <h2>So‘nggi yangiliklar</h2>
+    <ul>
+      <li>📅 2025-yilda Toshkentda IT sohasiga oid yangi startap markazi ochiladi.</li>
+      <li>🏛️ Samarqandda xalqaro turizm forumi o‘tkazildi.</li>
+      <li>🎶 Buxoroda Navro‘z festivalida xalq musiqa ansambllari chiqish qildi.</li>
+    </ul>
+    </section>
+
+    <section class="container content">
+      <h1 class="page-title">Yangiliklar</h1>
+
+      <div class="news-list">
+        <article class="news-card">
+          <img src="images/news1.jpg" alt="yangilik1" />
+          <div class="news-body">
+            <h3>Infratuzilma loyihalari boshlandi</h3>
+            <p>Shahar va qishloqlarda yangi yo‘l va bog‘lar barpo etilishi haqida batafsil ma'lumot.</p>
+            <a class="read-more" href="#">Batafsil →</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="images/news2.jpg" alt="yangilik2" />
+          <div class="news-body">
+            <h3>Madaniyat festivali ochildi</h3>
+            <p>Viloyat markazida madaniy festival boshlandi — konsertlar va ko‘rgazmalar.</p>
+            <a class="read-more" href="#">Batafsil →</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img src="images/news3.jpg" alt="yangilik3" />
+          <div class="news-body">
+            <h3>Iqtisodiy hamkorlik kengaydi</h3>
+            <p>Yangi investitsiya loyihalari e'lon qilindi — sarmoya va infratuzilma.</p>
+            <a class="read-more" href="#">Batafsil →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Azizbek Abdullayev tomonidan yarilgan.</p>
+    </div>
+  </footer>
+
+  <script>    
+    const btn = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    document.querySelectorAll('.nav-link').forEach(a => {
+      if (a.href === location.href || location.href.includes(a.getAttribute('href'))) a.classList.add('active');
+      a.addEventListener('click', () => nav.classList.remove('nav--open'));
+    });
+  </script>
+</body>
+</html>

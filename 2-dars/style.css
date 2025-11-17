@@ -1,0 +1,11 @@
+.rasm {
+    height: 200px;
+    width: 400px;
+    /* fill=> contain, cover */
+    object-fit: cover;
+}
+
+
+
+
+

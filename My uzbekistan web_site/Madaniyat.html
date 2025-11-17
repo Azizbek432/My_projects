@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Madaniyat — O'ZBEKISTON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="index.html">O'ZBEKISTON</a></div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menyu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="Yangiliklar.html" class="nav-link">Yangiliklar</a></li>
+          <li><a href="Hududlar.html" class="nav-link">Hududlar</a></li>
+          <li><a href="Madaniyat.html" class="nav-link">Madaniyat</a></li>
+          <li><a href="Aloqa.html" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="culture" class="section">
+    <h1>O‘zbekiston madaniyati</h1>
+    <p>
+       <b>Oʻzbekiston (rasman: Oʻzbekiston Respublikasi) — Markaziy Osiyoning markaziy qismida joylashgan mamlakat. Poytaxti — Toshkent shahri. Davlat tili — oʻzbek tili. Maydoni — 448 978 km2[7].     
+    </p>
+    <button class="culture-btn">Batafsil</button>
+    <img src="images/Samarqand.png" alt="Samarqand Registon" class="responsive-img" height="180px">
+    
+    <img src="images/Xorazm(Xiva).png" alt="Xiva" class="responsive-img" height="180px">
+
+    <img src="images/Buxoro.png" alt="Buxoro" class="responsive-img" height="180px">
+    </section>
+
+  <section class="container content">
+    <h1 class="page-title">Madaniyat</h1>
+    <p>O‘zbekiston madaniyati — musiqa, raqs, milliy taomlar, hunarmandchilik va an'analar majmuasidir.</p>
+
+      <div class="grid culture-cards">
+        <article class="culture-card">
+          <h3>Milliy musiqa</h3>
+          <p>Rubob, dutor, doira kabi cholg'u asboblari an'anaviy musiqa sahnasida muhim o‘rin tutadi.</p>
+        </article>
+
+        <article class="culture-card">
+          <h3>Taomlar</h3>
+          <p>Plov, somsa, mastava — o‘zbek taomlari va ularning tarixi haqida materiallar.</p>
+        </article>
+
+        <article class="culture-card">
+          <h3>Hunarmandchilik</h3>
+          <p>Atlas, adras, keramika va zardo‘zlik kabi an'anaviy hunarmandchilik turlari.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Azizbek Abdullayev tomonidan yaratilgan.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    document.querySelectorAll('.nav-link').forEach(a => {
+      if (a.href === location.href || location.href.includes(a.getAttribute('href'))) a.classList.add('active');
+      a.addEventListener('click', () => nav.classList.remove('nav--open'));
+    });
+  </script>
+</body>
+</html>

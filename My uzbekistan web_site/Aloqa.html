@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aloqa — O'ZBEKISTON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="index.html">O'ZBEKISTON</a></div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menyu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="Yangiliklar.html" class="nav-link">Yangiliklar</a></li>
+          <li><a href="Hududlar.html" class="nav-link">Hududlar</a></li>
+          <li><a href="Madaniyat.html" class="nav-link">Madaniyat</a></li>
+          <li><a href="Aloqa.html" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container content">
+      <h1 class="page-title">Bog'lanish</h1>
+      <p>Agar savollaringiz bo'lsa, quyidagi shakl orqali yozing (bu frontend namunasi — server tomoni kerak bo‘ladi..):</p>
+
+      <form class="contact-form" action="#" method="post" onsubmit="alert('Form yuborildi (namuna). Server yo‘q)'); return false;">
+        <label>Ism:
+          <input type="text" name="name" required />
+        </label>
+
+        <label>Email:
+          <input type="email" name="email" required />
+        </label>
+
+        <label>Xabar:
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button class="btn" type="submit">Yuborish</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Azizbek Abdullayev tomonidan yaratilgan.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    document.querySelectorAll('.nav-link').forEach(a => {
+      if (a.href === location.href || location.href.includes(a.getAttribute('href'))) a.classList.add('active');
+      a.addEventListener('click', () => nav.classList.remove('nav--open'));
+    });
+  </script>
+</body>
+</html>

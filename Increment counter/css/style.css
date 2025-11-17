@@ -1,0 +1,37 @@
+/* GLOBAL */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+/* Google fontdan olingan shrift */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #8e44ad;
+  columns: #fff;
+  margin: 0;
+  padding: 0;  
+}
+
+/* Bitta karta (counter joyi) */
+.counter-content {
+  text-align: center;
+  margin: 20px 40px;
+}
+
+.counter {
+    font-size: 60px;
+}
+
+
+@media (max-width:600px) {
+    body {
+        flex-direction: column;
+    }
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}

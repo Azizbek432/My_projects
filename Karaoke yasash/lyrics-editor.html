@@ -1,0 +1,49 @@
+<!-- lyric-editor.html -->
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Lyric Editor — Azizbek</title>
+  <style>
+    body{font-family:Poppins, sans-serif; background:#071429; color:#dff; padding:20px;}
+    .container{max-width:900px;margin:0 auto;}
+    textarea{width:100%;height:160px;border-radius:8px;padding:10px;font-size:1rem;}
+    input[type="file"]{color:#fff;}
+    button{padding:10px 14px;border-radius:8px;border:none;margin-right:8px;cursor:pointer;}
+    .controls{margin:12px 0;}
+    .timestamps{background:rgba(255,255,255,0.03);padding:10px;border-radius:8px;height:240px;overflow:auto;}
+    .row{display:flex;gap:8px;margin-bottom:8px;}
+    .hint{font-size:0.9rem;color:#b5d;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Lyric Editor — .lrc yaratish</h1>
+    <p class="hint">1) Audio yukla → 2) Pastdagi matn oynasiga satrlarni qo'y → 3) "Start capture" bosib, o'ynatish paytida <strong>Space</strong> bosib vaqtni saqlang → 4) "Export LRC" tugmasi bilan .lrc ni nusxalab oling.</p>
+
+    <div class="controls">
+      <label>Audio fayl: <input id="audio-file" type="file" accept="audio/*"></label>
+      <button id="load-file">Yuklash</button>
+    </div>
+
+    <audio id="editor-audio" controls style="width:100%;"></audio>
+
+    <h3>Lyrics (har bir satr yangi qatorda)</h3>
+    <textarea id="raw-lyrics" placeholder="Har bir satrni yangi qatorda yozing..."></textarea>
+
+    <div class="controls">
+      <button id="start-capture">Start capture</button>
+      <button id="stop-capture">Stop</button>
+      <button id="export-lrc">Export .lrc</button>
+      <button id="clear">Tozalash</button>
+    </div>
+
+    <h3>Captured timestamps</h3>
+    <div class="timestamps" id="captured"></div>
+    <p class="hint">Space bosilganda joriy audio vaqti qator bilan bog'lanadi.</p>
+  </div>
+
+  <script src="js/lyric-editor.js"></script>
+</body>
+</html>

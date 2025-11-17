@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+</head>
+<body>
+    <!-- checkbox, email, number radio,search, fieldset, optgroup, required,disabled
+    checked -->
+    <form action="https://echo.htmlacademy.ru">
+      <label for="ism">Ism</label>   
+      <input type="text" name="ism" placeholder="Ismingizni kiriting" id="ism" required>
+      <br />
+      <br />
+      <label for="pochta">Elektron pochta</label>
+      <input type="email" name="Pochta manzili" placeholder="Pochta manzili" id="pochta" required>
+      <br />
+      <br />
+      <label for="telNomer">Telefon raqam</label>
+      <input type="number" name="Phone number" placeholder="Telefon raqam" id="telNomer" required>
+      <br />
+      <br />
+      <label>
+        Qidirish
+        <input 
+          type="search"
+          name="Qidirilayotgan narsa" 
+          placeholder="Nima kerak" >
+      </label>
+      
+
+      <br />
+      <br />  
+      <fieldset>
+        <legend>Tanlovlar</legend>
+        <label>
+        Tanlang
+      <select name="Kerakli mashina">
+        <optgroup label="Sport Cars">
+            <option value="bmw">BMW</option>
+            <option value="tayota" selected>Tayota</option>
+            <option value="nissan">Nissan</option>
+        </optgroup>
+        <optgroup label="Sedans">
+            <option value="opel">Opel</option>
+            <option value="orlando" disabled>Orlando</option>
+        </optgroup>        
+      </select>
+      <label>
+     </fieldset>
+     <br />
+     <br />
+      <fieldset>
+        <legend>To'lov usuli:
+        <label>
+        To''lov usuli:
+            Naqd pul
+            <input type="radio" name="tolov_usuli" value="Naqd pul"  />
+        </label>
+        <label>
+            Pul o'tkazish
+            <input type="radio" name="tolov_usuli" value="Pul o'tkazish" checked />
+        
+         </label>  
+      <br />
+      <br />
+      <label>
+        Bizning shartlarimizga rozimisiz?
+        <input type="checkbox" name="shartlarimizga rozilik">
+      </label>
+      </fieldset>
+      
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>W3schools Inputs</legend>
+        <input type="button">
+        <br />
+        <br />
+        <input type="checkbox">
+        <br />
+        <br />
+        <input type="color">
+        <br />
+        <br />
+        <input type="date">
+        <br />
+        <br />
+        <input type="datetime-local">
+        <br />
+        <br />
+        <input type="email">
+        <br />
+        <br />
+        <input type="file">
+        <br />
+        <br />
+        <input type="hidden">
+        <br />
+        <br />
+        <input type="image">
+        <br />
+        <br />
+        <input type="month">
+        <br />
+        <br />
+        <input type="number">
+        <br />
+        <br />
+        <input type="password">
+        <br />
+        <br />
+        <input type="radio">
+        <br />
+        <br />
+        <input type="range">
+        <br />
+        <br />
+        <input type="reset">
+        <br />
+        <br />
+        <input type="search">
+        <br />
+        <br />
+        <input type="submit">
+        <br />
+        <br />
+        <input type="tel">
+        <br />
+        <br />
+        <input type="text">
+        <br />
+        <br />
+        <input type="time">
+        <br />
+        <br />
+        <input type="url">
+        <br />
+        <br />
+        <input type="week">
+        <br />
+        <br />
+      </fieldset>
+      <button type="submit">Jo'natish</button>    
+    </form>
+</body>
+</html>

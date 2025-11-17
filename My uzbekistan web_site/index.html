@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O'ZBEKISTON — Bosh sahifa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="index.html">O'ZBEKISTON</a></div>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menyu">☰</button>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="Yangiliklar.html" class="nav-link">Yangiliklar</a></li>
+          <li><a href="Hududlar.html" class="nav-link">Hududlar</a></li>
+          <li><a href="Madaniyat.html" class="nav-link">Madaniyat</a></li>
+          <li><a href="Aloqa.html" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+      <section id="home" class="section">
+     <h2>O‘zbekiston Respublikasi</h2>
+    <p>
+    O‘zbekiston — Markaziy Osiyoda joylashgan mustaqil davlat. Poytaxti — Toshkent shahri.
+    1991-yil 1-sentabrda mustaqillikka erishgan. Davlat tili — o‘zbek tili, pul birligi — so‘m.
+    </p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Flag_of_Uzbekistan.svg" alt="O‘zbekiston bayrog‘i" class="responsive-img">
+   </section>
+
+  <section class="hero">
+    <div class="container hero-inner">
+        <h1>O'zbekiston Respublikasiga xush kelibsiz!</h1>
+        <p class="lead">Bu sayt orqali siz mamlakatimiz tarixi, madaniyati va so'nggi yangiliklari bilan tanishasiz.
+          <br />
+        </p>
+        
+      </div>
+    </section>
+   
+          <div class="card-body">
+            <h3>Buxoro</h3>
+            <p>Hududlarda festival va an'analar haqida qisqacha — fotosuratlar va maqolalar.</p>
+            <a class="btn" href="Hududlar.html">Ko'rish</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/Xorazm(Xiva).png" alt="Xorazm(Xiva rasmi)" class="card-img" />
+          <div class="card-body">
+            <h3>Xiva</h3>
+            <p>Hudud va viloyatlar haqida qisqacha — sayohat va tarixiy joylar.</p>
+            <a class="btn" href="Hududlar.html">Batafsil</a>
+          </div>
+        </article>
+      </div>
+       
+       <article class="card">
+        <img src="images/Buxoro.png" alt="Buxoro rasmi" class="card-img" />
+        <div class="card-body">
+          <h3>Buxoro</h3>
+          <p>Hududlarda festival va an'analar haqida qisqacha — fotosuratlar va maqolalar.</p>
+          <a class="btn" href="Madaniyat.html">Batafsil</a>
+        </div>
+       </article>
+
+    </section>    
+   <main
+
+  class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Azizbek Abdullayev tomonidan yaratilgan.</p>
+    </div>
+  </footer>
+
+  <script>
+        const btn = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    
+    document.querySelectorAll('.nav-link').forEach(a => {
+      if (a.href === location.href || location.href.includes(a.getAttribute('href'))) {
+        a.classList.add('active');
+      }
+      a.addEventListener('click', () => {
+        
+        nav.classList.remove('nav--open');
+      });
+    });
+  </script>
+</body>
+</html>

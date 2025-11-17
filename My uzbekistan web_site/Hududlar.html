@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hududlar — O'ZBEKISTON</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo"><a href="index.html">O'ZBEKISTON</a></div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Menyu">☰</button>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Bosh sahifa</a></li>
+          <li><a href="Yangiliklar.html" class="nav-link">Yangiliklar</a></li>
+          <li><a href="Hududlar.html" class="nav-link">Hududlar</a></li>
+          <li><a href="Madaniyat.html" class="nav-link">Madaniyat</a></li>
+          <li><a href="Aloqa.html" class="nav-link">Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container content">
+      <h1 class="page-title">Hududlar</h1>
+      <p>O‘zbekiston 12 ta viloyat, Qoraqalpog‘iston va Toshkent shahrini o‘z ichiga oladi. Quyida viloyatlar kartochkalari.</p>
+
+      <div class="grid regions">
+       <section id="culture" class="section">
+        <h2>O‘zbekiston hudulari</h2>
+         
+       </section>
+
+        <article class="region-card">
+          <h3>Andijon viloyati — Oʻzbekiston Respublikasi tarkibidagi ma'muriy-hududiy birlik, viloyat [2]. Fargʻona vodiysining sharqiy qismida joylashgan.
+            1941-yil 6-martda tashkil etilgan. Maydoni 4,27 ming km².
+            Aholisi 3 461 000 kishi (2025-yil 26-mart holatiga ko'ra).</h3>
+          <p></p>
+          <img src="images/Andijon.jpg" alt="Andijon" class="responsive-img" width="200" height="135">
+          <button class="more-info-btn">Batafsil</button>
+        </article>
+
+        <article class="region-card">
+          <h3>Samarqand</h3>
+          <p>Samarqand – Oʻzbekiston Respublikasi Samarqand viloyatidagi qadimiy shahar. Amir Temur ordeni sohibi[3].
+            Viloyatning maʼmuriy, iqtisodiy va madaniy markazi (1938-yildan).
+            1925-1930-yillarda Respublika poytaxti. Oʻzbekistonning janubi-gʻarbida, Zarafshon vodiysining markaziy qismida (Dargʻom va Siyob kanallari orasida) joylashgan.</p>
+          <img src="images/Samarqand.png" alt="Samarqand" class="responsive-img" width="200" height="135">
+          <button class="more-info-btn">Batafsil</button>
+        </article>
+
+        <article class="region-card">
+          <h3>Buxoro — Oʻzbekiston Respublikasining qadimiy shaharlaridan biri, Buxoro viloyatining maʼmuriy, iqtisodiy va madaniy markazi.
+            Oʻzbekistonning ilk poytaxti hisoblanadi.Buyuk ipаk yoʻlida yirik tijorat markazlaridan boʻlgan.</h3>
+          <p></p>
+          <img src="images/Buxoro.png" alt="Buxoro" class="responsive-img">
+          <button class="more-info-btn">Batafsil</button>
+        </article>
+
+        <article class="region-card">
+          <h3>Xorazm</h3>
+          <p>Xorazm – Amudaryo sohillarida markazga ega
+            Oʻrta Osiyo qadimiy mintaqasi – qadimiy davlat[1][2][3] va rivojlangan irrigatsiyali dehqonchilik, hunarmandlik va savdo mintaqasi.
+            Xorazm orqali Buyuk Ipak yoʻli oʻtgan.</p>
+          <img src="images/Xorazm(Xiva).png" alt="Xorazm" class="responsive-img" width="200" height="135">
+          <button class="more-info-btn">Batafsil</button>
+        </article>
+      </div>
+    </section>
+
+        <article></article>
+          <h3>Qoraqalpog‘iston</h3>
+          <p>Qoraqalpog‘iston – O‘zbekiston Respublikasining mustaqil respublika maqomiga ega bo‘lgan hududi. U O‘zbekistonning g‘arbida joylashgan bo‘lib, Qoraqalpog‘iston Respublikasi deb ataladi. Mintaqa o‘zining boy madaniyati, tarixiy obidalari va tabiiy go‘zalliklari bilan mashhur.</p>
+          <img src="images/Qoraqalpogiston.png" alt="Qoraqalpog‘iston" class="responsive-img" width="200" height="135">
+          <button class="more-info-btn">Batafsil</button>
+        </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Azizbek Abdullayev tomonidan yaratilgan.</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    document.querySelectorAll('.nav-link').forEach(a => {
+      if (a.href === location.href || location.href.includes(a.getAttribute('href'))) a.classList.add('active');
+      a.addEventListener('click', () => nav.classList.remove('nav--open'));
+    });
+  </script>
+</body>
+</html>

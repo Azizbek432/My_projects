@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+audio {
+  margin: 20px 0;
+}
+
+#lyrics {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #ffe4b5;
+  min-height: 100px;
+  transition: all 0.5s ease;
+}
+
+.highlight {
+  color: #00ffff;
+  font-weight: bold;
+  text-shadow: 0 0 10px cyan;
+}
